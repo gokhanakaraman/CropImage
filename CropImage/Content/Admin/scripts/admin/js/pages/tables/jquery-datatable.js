@@ -1,0 +1,1 @@
+$(function () { $(".js-basic-example").DataTable({ responsive: !0 }), $(".js-exportable").DataTable({ dom: "Bfrtip", responsive: !0, buttons: ["copy", "csv", "excel", "pdf", "print"] }) });

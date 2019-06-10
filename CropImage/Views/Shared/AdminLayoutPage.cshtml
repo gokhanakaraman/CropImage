@@ -1,0 +1,88 @@
+﻿<!DOCTYPE html>
+<html>
+<head>
+    <meta charset="UTF-8">
+    <meta content="width=device-width, initial-scale=1, maximum-scale=1, user-scalable=no" name="viewport">
+    <meta name="robots" content="noindex, nofollow">
+    <title>@ViewBag.Title | Crop Image </title> 
+    <script src="https://ajax.aspnetcdn.com/ajax/jQuery/jquery-3.2.1.min.js"></script>
+    <link href="https://fonts.googleapis.com/css?family=Roboto:400,700&subset=latin,cyrillic-ext" rel="stylesheet" type="text/css">
+    <link href="https://fonts.googleapis.com/icon?family=Material+Icons" rel="stylesheet" type="text/css">
+    <script src="https://use.fontawesome.com/667a8d8a01.js"></script>
+    <link href="/Content/Admin/plugins/bootstrap/css/bootstrap.css" rel="stylesheet" />
+    <link href="~/Content/Admin/plugins/bootstrap-select/css/bootstrap-select.min.css" rel="stylesheet" /> 
+    <link href="/Content/Admin/plugins/animate-css/animate.css" rel="stylesheet" />
+    <link href="/Content/Admin/css/style.css" rel="stylesheet" /> 
+    <link href="~/Content/Admin/plugins/sweetalert/sweetalert.css" rel="stylesheet" />
+ 
+</head>
+<body class="theme-red">
+    <div class="page-loader-wrapper">
+        <div class="loader">
+            <div class="preloader">
+                <div class="spinner-layer pl-red">
+                    <div class="circle-clipper left">
+                        <div class="circle"></div>
+                    </div>
+                    <div class="circle-clipper right">
+                        <div class="circle"></div>
+                    </div>
+                </div>
+            </div>
+            <p>Lütfen bekleyiniz...</p>
+        </div>
+    </div>
+    <div class="PostLoader">
+        <div class="loader">
+            <div class="preloader">
+                <div class="spinner-layer pl-red">
+                    <div class="circle-clipper left">
+                        <div class="circle"></div>
+                    </div>
+                    <div class="circle-clipper right">
+                        <div class="circle"></div>
+                    </div>
+                </div>
+            </div>
+            <p>İşlem Devam Ediyor...</p>
+            <div class="progress">
+            </div>
+        </div>
+    </div>
+    <div class="overlay"></div>
+    <nav class="navbar" style="    background-color: #3a3782 !important;">
+        <div class="container-fluid">
+            <div class="navbar-header">
+                <a class="navbar-toggle collapsed" data-toggle="collapse" data-target="#navbar-collapse" aria-expanded="false"></a>
+                <a class="bars"></a>
+                <a class="navbar-brand" href="/">
+                    <strong class="font-25">Crop Image </strong>
+                </a>
+            </div>
+            <div class="collapse navbar-collapse" id="navbar-collapse">
+               
+            </div>
+        </div>
+    </nav>
+    <section>
+        <aside id="leftsidebar" class="sidebar">
+            <div class="user-info">
+                <div class="image">
+                    <img src="/Content/Admin/images/user.png" width="48" height="48" alt="User" />
+                </div>
+                <div class="info-container">
+                    <div class="name" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">admin </div>
+                </div>
+            </div> 
+        </aside>
+    </section>
+    <section class="content">
+        @RenderBody()
+    </section>
+    <script src="/Content/Admin/plugins/bootstrap/js/bootstrap.js"></script>
+    <script src="~/Content/Admin/plugins/bootstrap-select/js/bootstrap-select.js"></script>   
+    <script src="~/Content/Admin/plugins/sweetalert/sweetalert.min.js"></script>
+    <script src="/Content/Admin/plugins/node-waves/waves.js"></script>
+    <script src="/Content/Admin/scripts/admin/js/admin.js"></script> 
+</body>
+</html> 

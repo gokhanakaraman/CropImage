@@ -1,0 +1,1 @@
+$(function () { $(".js-modal-buttons .btn").on("click", function () { var o = $(this).data("color"); $("#mdModal .modal-content").removeAttr("class").addClass("modal-content modal-col-" + o), $("#mdModal").modal("show") }) });
